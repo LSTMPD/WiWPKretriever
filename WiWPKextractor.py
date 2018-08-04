@@ -44,6 +44,6 @@ if mode == "2":
     screenclean()
     b = 1
     while b == 1:
-        WPK = subprocess.check_output(["C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe", "(Get-WmiObject -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey"])
+        WPK = subprocess.call(["C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe", "(Get-WmiObject -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey"])
         input("\nPro ukončení stiskněte Enter")
         break
